@@ -18,7 +18,7 @@ import '../css/video.min.css'
 import '../css/slick.css'
 import '../css/side-demo.css'
 import '../css/it-source-2.css'
-import '../css/app.css'
+import '../css/App.css'
 
 const container = document.getElementById('app');
 const root = createRoot(container);
