@@ -1,0 +1,190 @@
+.wcircle-menu-item {
+  will-change: transform, opacity;
+}
+
+.wcircle-menu-item.show {
+  pointer-events: auto;
+}
+
+
+
+ /* .circle-me {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 150px auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  opacity: 1;
+  transition: all 0.5s ease, opacity 0.5s ease; 
+} */
+.circle-me {
+    border-radius: 50%;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #999;
+    margin: 200px auto;
+    position: fixed;
+    top: 70%;
+    left: 85%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.circle-me .open {
+  right: 10%;
+  bottom: 23%;
+  opacity: 1;
+}
+
+.wcircle-icon {
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #b197fc, #6a5acd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.wcircle-menu {
+  position: absolute;
+  top: -15%;
+  left: 7%;
+  width: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.wcircle-menu-item {
+  position: absolute !important;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wcircle-menu.open .wcircle-menu-item {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (min-width: 768px) {
+  .circle-me {
+    width: 250px;
+    height: 250px;
+    margin: 100px auto;
+    right: 15%;
+  }
+
+  .wcircle-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .wcircle-menu {
+    top: -10%;
+    left: 5%;
+  }
+
+  .wcircle-menu-item {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .circle-me {
+    display: none;    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: auto;
+    right: auto;
+  }
+
+  .circle-me.mobile-linear .wcircle-icon {
+    position: static;
+    transform: none;
+    margin-bottom: 12px;
+  }
+
+  .circle-me.mobile-linear .wcircle-menu {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 12px 4px;
+  }
+
+  .circle-me.mobile-linear .wcircle-menu-item {
+    position: static !important;
+    width: 64px;
+    height: 64px;
+    transform: none !important;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .circle-me.mobile-linear.open .wcircle-menu-item {
+    opacity: 1;
+    pointer-events: auto; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle-me {
+    width: 300px;
+    height: 300px;
+    margin: 150px auto;
+  }
+
+  .wcircle-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  .wcircle-menu {
+    top: 2%;
+    left: 8%;
+  }
+
+  .wcircle-menu-item {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+}
+
+

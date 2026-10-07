@@ -1,0 +1,119 @@
+/* ✅ Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  animation: popIn 0.3s ease;
+  min-width: 280px;
+}
+
+.checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 3px solid #28a745;
+  position: relative;
+  margin-bottom: 15px;
+  animation: scaleUp 0.5s ease;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  width: 12px;
+  height: 25px;
+  border-right: 3px solid #28a745;
+  border-bottom: 3px solid #28a745;
+  transform: rotate(45deg);
+  animation: drawCheck 0.5s ease forwards 0.3s;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCheck {
+  from {
+    height: 0;
+    width: 0;
+  }
+
+  to {
+    height: 25px;
+    width: 12px;
+  }
+}
+
+/* Poll form styles */
+
+
+.poll-checked:hover {
+  background-color: rgba(88, 82, 149, 0.133) !important;
+    cursor: pointer ;
+}
+.poll-checked .form-check-label:hover {
+  /* background-color: rgba(88, 82, 149, 0.133) !important; */
+    cursor: pointer ;
+}
+.poll-checked .form-check-input:hover {
+  /* background-color: rgba(88, 82, 149, 0.133) !important; */
+    cursor: pointer ;
+}
+
+
+.poll-checked.checked {
+  background-color: rgba(166, 182, 235, 0.397) !important;
+  /* Slightly darker light blue for checked state */
+}
+
+
+
+/* ✅ Progress Bar */
+.progress-bar-1 {
+  position: relative;
+  background-color: #e0e0e0;
+  height: 5px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.progress-fill {
+  height: 5px;
+  background-color: rgb(255, 93, 147);
+  border-radius: 2px;
+}

@@ -1,0 +1,56 @@
+/* Custom pagination bullets like your image */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #0d1333; /* dark blue for inactive */
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px;
+  height: 8px;
+  background-color: #4368f8; /* bright blue for active */
+  border-radius: 10px;
+}
+.img-klano{
+  width: 100%;
+  height: auto;
+}
+
+
+/* Custom pagination */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 8px;
+}
+
+.custom-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #0d1333;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-dot.active {
+  width: 24px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #4368f8;
+}
+
+.background{
+  background-color: #0099ff1a;
+
+}
+
+@media (max-width: 320px) {
+  .img-klano {
+    width: 80%;
+  }
+}

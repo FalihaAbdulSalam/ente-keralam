@@ -1,0 +1,659 @@
+.competition-container {
+  background: #fafafa;
+  font-family: var(--fo--open);
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+
+/* -------- Banner Section -------- */
+.banner {
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.banner-svg {
+  width: 100%;
+  height: auto;
+}
+
+.banner h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* -------- Competition Card -------- */
+.competition-card {
+  background: #945861db;
+  color: #fff;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.poll-image {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.poll-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.poll-details {
+  font-size: 14px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.detail-row .label {
+  width: 90px;         /* fixes alignment */
+  font-weight: 500;
+}
+
+.detail-row .value {
+  font-weight: bold;   /* make date bold */
+  color: #fff;         /* optional: ensure visible on dark background */
+}
+
+.date-large {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+
+.login-btn {
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 14px 25px;
+  background: #fff;
+  border: none;
+  color: #b85c4c;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  transform: translate(0%, 0%);
+  position: static;
+}
+
+.login-btn:hover {
+  background: #fff5f5;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* 
+-------- Upload Section --------
+.upload-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.video-preview-box,
+.title-input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.upload-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.upload-box {
+  display: inline-block;
+  width: 450px;
+  height: 100px;
+  border: 2px dashed #4fa3f7;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  background: #f0f8ff;
+
+}
+
+.upload-content div {
+  font-size: 13px;
+  color: #4fa3f7;
+  font-weight: 600;
+}
+
+.upload-box:hover {
+  background: #f0f8ff;
+}
+
+.upload-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upload-icon {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.guidelines {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.title-input {
+  width: 450px !important;
+  margin: 15px auto;
+}
+
+.description-input {
+  width: 450px !important;
+  margin: 10px auto !important;
+  resize: vertical;
+  font-family: inherit;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.description-title {
+  display: none;
+}
+
+.compete-prompt,
+.participate-prompt {
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+-------- Submit Button --------
+.submit-btn {
+  background: #e24b4b;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  transform: translate(0%, 0%);
+  position: static;
+}
+
+.submit-btn:hover {
+  background: #c93f3f;
+  color: white;
+}
+
+-------- Preview Section --------
+.image-preview img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  background: none;
+  border: 2px solid;
+  color: red;
+  font-size: 21px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 0px 6px 0px 6px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  transform: translate(0%, 0%);
+  position: static;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+-------- Video Preview --------
+.video-preview-box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.video-name {
+  flex-grow: 1;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.play-btn {
+  background: #4fa3f7;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: translate(0%, 0%);
+  position: static;
+} */
+
+/* ---------- UPLOAD SECTION (RESPONSIVE) ---------- */
+
+.upload-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.upload-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Upload Box */
+.upload-box {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  min-height: 110px;
+  border: 2px dashed #4fa3f7;
+  border-radius: 20px;
+  padding: 20px 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  background: #f0f8ff;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.upload-box:hover {
+  background: #e8f4ff;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.upload-content div {
+  font-size: 14px;
+  color: #4fa3f7;
+  font-weight: 600;
+}
+
+/* ------------ INPUT TEXT & TEXTAREA ------------ */
+
+.title-input,
+.description-input {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.description-input {
+  resize: vertical;
+}
+
+/* ------------ IMAGE PREVIEW ------------ */
+.image-preview img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.delete-btn {
+  background: none;
+  border: 2px solid red;
+  color: red;
+  font-size: 20px;
+  padding: 3px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+   transform: translate(0%, 0%);
+  position: static;
+}
+
+.delete-btn:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+/* ------------ VIDEO PREVIEW ------------ */
+.video-preview-box {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.video-name {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.play-btn {
+  background: #4fa3f7;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+   transform: translate(0%, 0%);
+  position: static;
+}
+
+/* ------------ SUBMIT BUTTON ------------ */
+.submit-btn {
+  background: #e24b4b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 300px;
+  transition: 0.3s ease;
+   transform: translate(0%, 0%);
+  position: static;
+}
+
+.submit-btn:hover {
+  background: #c93f3f;
+}
+
+/* ------------ GUIDELINES ------------ */
+.guidelines {
+  font-size: 12px;
+  color: #888;
+  margin-top: 8px;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+  .upload-box {
+    max-width: 420px;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  .upload-box {
+    max-width: 90%;
+    min-height: 100px;
+  }
+
+  .title-input,
+  .description-input {
+    max-width: 90% !important;
+  }
+
+  .submit-btn {
+    max-width: 80%;
+  }
+}
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .upload-box {
+    max-width: 95%;
+    min-height: 90px;
+    padding: 15px;
+  }
+
+  .upload-icon {
+    width: 50px;
+  }
+
+  .image-preview img {
+    max-width: 95%;
+  }
+
+  .submit-btn {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .video-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-btn {
+    font-size: 18px;
+    padding: 2px 8px;
+  }
+}
+
+
+/* -------- Video Modal -------- */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.video-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.video-modal-content video {
+  width: 500px;
+  max-width: 90vw;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+.banner-pd{
+    padding: 0;
+}
+/* ----------- RESPONSIVE DESIGN ----------- */
+
+/* For tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .banner h3 {
+    font-size: 20px;
+  }
+
+  .upload-box {
+    width: 260px;
+    height: 130px;
+  }
+
+  .title-input,
+  .description-input {
+    width: 80% !important;
+  }
+}
+
+/* For mobile devices (≤ 768px) */
+@media (max-width: 768px) {
+ 
+  .competition-description{
+    padding: 0px 15px 0px 15px;
+  }
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .poll-details {
+    margin-top: 10px;
+  }
+
+  .upload-box,
+  .title-input {
+    width: 80%;
+  }
+
+  .image-text{
+    font-size: 15px !important;
+  }
+
+  .image-preview img {
+    max-width: 80%;
+  }
+
+  .video-modal-content video {
+    width: 90vw;
+  }
+
+  .banner h3 {
+    font-size: 15px;
+        padding: 0px 10px 0px 10px;
+
+  }
+
+  .submit-btn {
+    width: 70%;
+  }
+
+  .delete-btn {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+  }
+
+}
+
+/* For small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .video-info {
+    flex-wrap: nowrap;
+  }
+
+  .delete-btn {
+    margin-left: auto;
+    font-size: 18px;
+    padding: 0px 12px 0px 3px;
+  }
+
+  .upload-box {
+    width: 90%;
+    height: 120px;
+  }
+
+  .title-input,
+  .description-input {
+    width: 90% !important;
+  }
+
+  .title-input {
+    width: 90%;
+  }
+  .image-text{
+    font-size: 10px !important;
+  }
+
+  .submit-btn {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .guidelines {
+    font-size: 11px;
+  }
+}
+
+.competition-description{
+  text-align: justify;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block; /* or block depending on layout */
+}
+
+.banner-svg {
+    width: 100%; /* adjust as needed */
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;        /* adjust position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;     /* change text color */
+    font-size: 20px; /* adjust */
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none; /* optional: clicks go through */
+}
+
+.login-btn:focus{
+      color: #b85c4c;
+}

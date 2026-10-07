@@ -1,0 +1,37 @@
+
+  
+  .it-nw-btn .arrow-box {
+    /* black square around arrow */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;   /* square size */
+    height: 30px;
+    margin-left: 10px;
+    /* background-color: #12111a; */
+
+   
+  
+  
+    border-radius: 4px;
+    /* background-color: #fd4485; */
+    /* background-color: #12111a; */
+    border-top-right-radius: 0;
+  }
+  
+  .it-nw-btn .arrow-icon {
+    /* size of arrow itself */
+    margin-left: 0px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+  }
+  
+  /* hover animation same as before */
+  .it-nw-btn:hover .arrow-box svg {
+    -webkit-animation: toLeftFromRight 0.5s forwards;
+    animation: toLeftFromRight 0.5s forwards;
+  }
+
+
+  

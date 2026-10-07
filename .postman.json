@@ -1,0 +1,21 @@
+{
+  "workspaceId": "a780865a-eb08-40aa-8292-4536bd801601",
+  "workspaceName": "C-DIT",
+  "collectionId": "9142bfbc-12ab-4295-a05b-baad534a6eaa",
+  "collectionUid": "6326817-9142bfbc-12ab-4295-a05b-baad534a6eaa",
+  "collectionName": "EnteKeralam API",
+  "environments": {
+    "local": {
+      "environmentId": "5ce2d112-36f2-40a3-be55-6383586ea680",
+      "environmentUid": "6326817-5ce2d112-36f2-40a3-be55-6383586ea680",
+      "environmentName": "EnteKeralam - Local",
+      "baseUrl": "http://localhost:8000"
+    },
+    "staging": {
+      "environmentId": "e920b74c-bdb3-4e20-be10-2fb9fe93d6a7",
+      "environmentUid": "6326817-e920b74c-bdb3-4e20-be10-2fb9fe93d6a7",
+      "environmentName": "EnteKeralam - Staging",
+      "baseUrl": "https://entekeralam.cditproject.org"
+    }
+  }
+}

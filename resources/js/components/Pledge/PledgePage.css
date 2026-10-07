@@ -1,0 +1,449 @@
+.pledgePageContainer {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    padding: 40px 15px;
+}
+
+/* Main white rounded box */
+.pledgeBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Right text area */
+.pledgeTextContainer {
+    flex: 2 1 500px;
+}
+
+.mal {
+    font-family: "Noto Sans Malayalam", sans-serif;
+    font-size: 1.2rem;
+    color: #1f1b1b;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+/* Word highlight */
+#pledgeText span {
+    margin-right: 0.25rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+}
+
+.highlight-pledge {
+    background-color: #ffe87c;
+    border-radius: 4px;
+    padding: 1px 3px;
+    transform: scale(1.05);
+}
+
+/* Checkbox */
+#confirmDiv {
+    margin-top: 2px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#confirmDiv .form-check-label {
+    cursor: pointer;
+}
+
+#confirmCheck {
+    width: 13px;
+    height: 13px;
+    margin-top: 8px;
+}
+
+/* Download Button */
+.downloadLink {
+    margin-top: 8px;
+}
+
+.downloadLink .download-btn {
+    background: var(--clr--blue-dark);
+    border: 2px solid var(--clr--blue-dark);
+    color: #fff;   
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.downloadLink .download-btn:hover {
+    background: #ffffffbb;
+    border: 2px solid var(--clr--blue-dark);
+    color: var(--clr--blue-dark) !important;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.click-here:hover {
+    color: rgb(8, 0, 250) !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .pledgeBox {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pledgeTextContainer {
+        flex: 1 1 100%;
+    }
+
+    .mal {
+        font-size: 1.05rem;
+        line-height: 1.9rem;
+    }
+
+    #confirmDiv {
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .pledgeBox {
+        padding: 20px;
+    }
+
+    .pledgeImage img {
+        max-width: 280px;
+    }
+
+    .mal {
+        font-size: 0.95rem;
+        line-height: 1.8rem;
+    }
+
+    .download-btn {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+#pledgeText span {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: inline-block;
+}
+
+.highlight-pledge {
+    transform: scale(1.2);
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.mal {
+    font-family: "Noto Sans Malayalam", sans-serif !important;
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+    background-blend-mode: overlay;
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.logio {
+    background: #ffffff7d;
+}
+
+.container-login100 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.sam {
+    background: #F3EEEA;
+    border-radius: 10px;
+}
+
+.login100-pic img {
+    max-width: 100%;
+}
+
+.login100-form {
+    width: 290px;
+}
+
+.login100-form-title {
+    font-family: Poppins-Bold;
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+}
+
+/*---------------------------------------------*/
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.input100 {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+}
+
+/*------------------------------------------------------------------ [ Focus ]*/
+.focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87, 184, 70, 0.8);
+}
+
+.input100:focus+.focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 70px 25px;
+        opacity: 0;
+    }
+}
+
+.symbol-input100 {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.input100:focus+.focus-input100+.symbol-input100 {
+    color: #57b846;
+    padding-left: 28px;
+}
+
+.logio img {
+    width: 200px;
+}
+
+.wrap-login100 {
+    background-image: url('/design/assets/qq1.jpg');
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 25px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+    .login100-pic {
+        width: 35%;
+    }
+
+    .login100-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login100-pic {
+        display: none;
+    }
+
+    .login100-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding: 18px 8px;
+        background-image: none;
+        margin-bottom: 20px;
+    }
+
+    .pld {
+        color: #1f1b1b;
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    .pld::first-letter {
+        line-height: normal;
+    }
+    
+    .downloadLink .download-btn {
+        font-size: 13px;
+        padding: 7px 8px !important;
+        font-family: var(--fo--open);
+        left: 0%;
+        outline: none;
+        overflow: hidden;
+        padding: 0 10px;
+        position: relative;
+        top: 0%;
+        transform: translate(0%, 0%);
+        width: 95px;
+        z-index: 1;
+    }
+}
+
+.pld {
+    color: #1f1b1b;
+    font-size: 22px;
+    text-align: justify;
+    position: relative;
+    background: #ffffff;
+    padding: 8px 18px;
+    font-size: 1.1rem;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.pld img {
+    position: absolute;
+    width: 85px;
+    left: -62px;
+    top: -35px;
+    opacity: .1;
+}
+
+.pld::first-letter {
+    font-size: 35px;
+    line-height: normal;
+}
+
+#pledgeText span {
+    line-height: normal;
+}
+
+#confirmDiv {
+    padding: 0px 40px;
+}
+
+#confirmDiv .form-check-label {
+    font-weight: 600;
+}
+
+/* add subtle spacing between each word span produced by the component */
+#pledgeText span {
+    margin-right: 0.30rem;
+    word-break: keep-all;
+}
+
+#pledgeText .highlight-pledge {
+    background-color: #FFD700;
+    transform: translateZ(0) scale(1);
+    transform-origin: center bottom;
+    will-change: transform, color;
+    transition: transform 240ms cubic-bezier(.2, .9, .3, 1), color 240ms ease-in-out;
+}
+
+#pledgeText .highlight-pledge:hover,
+#pledgeText .highlight-pledge:focus {
+    transform: scale(1.06);
+    font-weight: 600;
+}
+
+.mal {
+    font-family: "Noto Sans Malayalam", sans-serif !important;
+}
+
+.pledgePageContainer {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.pledge-sub{
+      transform: translate(0%, 0%);
+  position: static;
+}
+
+@media (max-width: 480px) {
+    .margin-0 {
+        margin-top: 0px;
+    }
+    .participation-text p{
+        margin-bottom: 0px;
+    } .participation-text {
+        margin-bottom: 0px;
+    }
+    .download-link{
+        width: 75px;
+    }
+}

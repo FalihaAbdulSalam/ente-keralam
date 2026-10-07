@@ -1,0 +1,159 @@
+@import 'tailwindcss';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+  font-family: 'Noto Sans Malayalam';
+  src: url('/font/NotoSansMalayalam-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-malayalam: "Noto Sans Malayalam", sans-serif;
+
+}
+/* Automatic language detection using Unicode ranges */
+/* Malayalam script range: U+0D00–U+0D7F */
+[lang="ml"], 
+[lang="malayalam"],
+*[data-lang="ml"],
+*[data-lang="malayalam"] {
+  font-family: var(--font-malayalam) !important;}
+
+
+  
+/* Quiz Details Date Styling */
+.dates {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+}
+
+/* Quiz Content Malayalam Styling */
+.quiz-content-ml {
+  font-family: 'Noto Sans Malayalam', sans-serif !important;
+}
+
+
+/* Scroll-to-top button */
+  .scrollup {
+  display: none;
+  transition: opacity .3s ease;
+  opacity: 0;
+}
+
+.scrollup.visible {
+  display: block;
+  opacity: 1;
+}
+
+  .scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #4c6df3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(79,122,255,0.25);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 220ms ease, transform 220ms ease;
+    z-index: 1200;
+  }
+
+  .scroll-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .scroll-top svg {
+    display: block;
+  }
+
+  .scroll-top:focus {
+    outline: none;
+    /* box-shadow: 0 0 0 6px rgba(79,122,255,0.12); */
+  }
+
+  @media (max-width: 480px) {
+    .scroll-top { right: 14px; bottom: 28px; width:48px; height:48px; }
+  }
+
+.quiz-color {
+  color: #2e2d2d !important;
+}
+
+.login-back-btn {
+
+ border: 2px solid !important;
+     text-decoration: none!important;
+     height: 40px !important;
+    /* width: auto !important; */
+   /* line-height: 0;
+    background-size: 200%, 1px;
+    transition: all 200ms 
+linear 0ms; */
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
+
+.bannerimg{
+  background: #f9f9f9;
+}
+
+.award-card img{
+  width: 60% !important;
+}
+
+.login-img img{
+  width: 60% !important;
+}
+
+.color-ruby {
+  background-color: var(--clr--ruby) !important;
+}
+
+
+@media (max-width: 991px) {
+    .it-nw-side-bg-top {
+        display: none;
+    }
+    .it-nw-side-bg-left{
+        display: none;
+    }
+    .it-nw-side-bg-right{
+        display: none;
+    }
+    .blog-shapes-grid-right{
+        display: none;
+    }
+}
+
+.mobile-submenu-toggle{
+  display: none;
+  color: #000000 !important;
+   transform: translate(45%, 0%);
+  position: static;
+  height: 16px;
+  /* width: 200px; */
+}

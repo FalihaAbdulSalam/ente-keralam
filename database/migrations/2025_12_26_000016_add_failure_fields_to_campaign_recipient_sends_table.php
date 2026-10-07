@@ -1,0 +1,24 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::table('campaign_recipient_sends', function (Blueprint $table) {
+            $table->timestamp('failed_at')->nullable()->after('sent_at');
+            $table->longText('error_message')->nullable()->after('failed_at');
+            $table->timestamp('last_attempted_at')->nullable()->after('error_message');
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::table('campaign_recipient_sends', function (Blueprint $table) {
+            $table->dropColumn(['failed_at', 'error_message', 'last_attempted_at']);
+        });
+    }
+};

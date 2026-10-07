@@ -1,0 +1,124 @@
+/* Vertical right-side indicators for Carousel */
+.ek-carousel {
+  position: relative;
+}
+
+/* Prevent layout shift by setting min-height and aspect ratio */
+.ek-carousel .carousel,
+.ek-carousel .carousel-inner,
+.ek-carousel .carousel-item {
+  min-height: 329px; /* Default min-height for larger screens */
+}
+
+/* Position indicators vertically on the right side, centered vertically */
+.ek-carousel .carousel-indicators {
+  position: absolute;
+  left: 98%; /* distance from right edge, adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  z-index: 5;
+  list-style: none;
+}
+
+/* Hide default li styles if bootstrap adds them */
+.ek-carousel .carousel-indicators li {
+  width: 8px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.ek-carousel .carousel-indicators li.active {
+  background-color: #ffffff;
+  transform: scale(1.15);
+  border-color: rgba(0, 0, 0, 0.43);
+}
+ .ek-carousel .carousel-indicators li {
+   
+        margin-left: -9px;
+
+  }
+
+/* Responsive design for min-height based on viewport */
+@media (max-width: 1200px) {
+  .ek-carousel .carousel,
+  .ek-carousel .carousel-inner,
+  .ek-carousel .carousel-item {
+    min-height: 270px; /* Adjusted min-height for medium screens */
+  }
+ 
+}
+
+@media (max-width: 992px) {
+  .ek-carousel .carousel,
+  .ek-carousel .carousel-inner,
+  .ek-carousel .carousel-item {
+    min-height: 220px; /* Adjusted min-height for smaller screens */
+  }
+ 
+}
+
+@media (max-width: 768px) {
+  .ek-carousel .carousel,
+  .ek-carousel .carousel-inner,
+  .ek-carousel .carousel-item {
+    min-height: 200px; /* Adjusted min-height for tablets and smaller devices */
+  }
+
+  .ek-carousel .carousel-indicators {
+    gap: 8px;
+  }
+
+  .ek-carousel .carousel-indicators li {
+    width: 7px;
+    height: 15px;
+        margin-left: -9px;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .ek-carousel .carousel,
+  .ek-carousel .carousel-inner,
+  .ek-carousel .carousel-item {
+    min-height: 110px; /* Adjusted min-height for smaller mobile devices */
+  }
+
+  .ek-carousel .carousel-indicators {
+    gap: 8px;
+  }
+
+  .ek-carousel .carousel-indicators li {
+    width: 7px;
+    height: 15px;
+        margin-left: -9px;
+
+  }
+}
+
+
+@media (max-width: 320px) {
+  .ek-carousel .carousel,
+  .ek-carousel .carousel-inner,
+  .ek-carousel .carousel-item {
+    min-height: 70px; /* Adjusted min-height for smaller mobile devices */
+  }
+
+  .ek-carousel .carousel-indicators {
+    gap: 8px;
+  }
+
+  .ek-carousel .carousel-indicators li {
+    width: 7px;
+    height: 25px;
+    margin-left: -9px;
+  }
+}
