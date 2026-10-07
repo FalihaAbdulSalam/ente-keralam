@@ -24,3 +24,7 @@ __pycache__/
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Unused oversized design assets
+public/design/assets/45.png
+public/design/assets/11.svg
