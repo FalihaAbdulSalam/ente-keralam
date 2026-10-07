@@ -1,0 +1,129 @@
+/* Global Button Styles */
+:root {
+  --color-primary: #4b7bec;
+  --color-primary-hover: #3a63d9;
+  --color-secondary: #26de81;
+  --color-secondary-hover: #20bf6b;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --btn-radius: 6px;
+  --btn-padding-y: 10px;
+  --btn-padding-x: 18px;
+  --btn-font-weight: 600;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
+  border-radius: var(--btn-radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: var(--btn-font-weight);
+  font-size: 14px;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid rgba(75, 123, 236, 0.5);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.btn-primary:hover { background: var(--color-primary-hover); }
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-on-secondary);
+}
+.btn-secondary:hover { background: var(--color-secondary-hover); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-outline:hover { background: var(--color-primary); color: #ffffff; }
+
+.btn-sm { padding: 6px 12px; font-size: 13px; }
+.btn-lg { padding: 12px 22px; font-size: 16px; }
+.btn-block { display: flex; width: 100%; }
+
+/* OTP verify button size */
+.btn-otp-verify {
+  height: 40px !important;
+  width: 179px !important;
+  background: transparent;
+  color: #003399;
+  border: 1px solid #003399;
+  transition: all 0.2s ease;
+}
+
+.btn-otp-verify:hover,
+.btn-otp-verify:focus {
+  background: #003399;
+  color: #fff;
+  border-color: #003399;
+  box-shadow: 0 8px 16px rgba(0, 51, 153, 0.18);
+}
+
+/* Ensure gradient buttons in form wrappers don't override OTP outline */
+.it-up-form-wrap .btn-otp-verify {
+  background: transparent !important;
+  background-image: none !important;
+  color: #003399 !important;
+  border: 1px solid #003399 !important;
+  box-shadow: 0 8px 16px rgba(0, 51, 153, 0.18);
+}
+
+.it-up-form-wrap .btn-otp-verify:hover,
+.it-up-form-wrap .btn-otp-verify:focus {
+  background: #003399 !important;
+  color: #fff !important;
+  border-color: #003399 !important;
+}
+
+/* Reusable outline button with brand blue hover */
+.btn-outline-ente-home {
+  border: 1px solid #282828;
+  color: #282828;
+  background-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-ente-home:hover,
+.btn-outline-ente-home:focus {
+  background-color: #282828;
+  color: #fff;
+  border-color: #282828;
+  box-shadow: 0 8px 16px rgba(0, 51, 153, 0.18);
+}
+
+/* Ensure gradient buttons in form wrappers don't override outline buttons */
+.it-up-form-wrap .btn-outline-ente-home {
+  background: transparent !important;
+  background-image: none !important;
+  color: #282828 !important;
+  border: 1px solid #282828 !important;
+  box-shadow: 0 8px 16px rgba(0, 51, 153, 0.18);
+}
+
+.it-up-form-wrap .btn-outline-ente-home:hover,
+.it-up-form-wrap .btn-outline-ente-home:focus {
+  background: #282828 !important;
+  color: #fff !important;
+  border-color: #282828 !important;
+}

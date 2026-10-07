@@ -1,0 +1,179 @@
+/* Morphing Preloader Styles */
+.morphing-preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.morphing-preloader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.morphing-icon-container {
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+.loading-ring {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-top-color: var(--ring-color);
+    border-right-color: var(--ring-color);
+    animation: loading-ring-spin 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.morphing-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.morphing-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    animation: morphing-fade 2.5s ease-in-out infinite;
+    will-change: opacity, transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.morphing-icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: inherit;
+}
+
+/* Morphing Animations */
+@keyframes loading-ring-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes morphing-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes morphing-sway {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
+
+@keyframes morphing-fade {
+    0%, 100% {
+        opacity: 0.75;
+        transform: scale(0.9);
+    }
+    
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes morphing-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes morphing-scale {
+
+    0%,
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.2) rotate(90deg);
+    }
+
+    50% {
+        transform: scale(0.9) rotate(180deg);
+    }
+
+    75% {
+        transform: scale(1.15) rotate(270deg);
+    }
+}
+
+@keyframes loading-text-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Fade out animation when removing preloader */
+.morphing-preloader-wrapper.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .morphing-icon-container {
+        padding: 20px;
+    }
+
+    .morphing-icon-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+}
