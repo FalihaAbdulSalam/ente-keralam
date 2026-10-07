@@ -2,7 +2,7 @@
     "$schema": "https://json.schemastore.org/package.json",
     "private": true,
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && node scripts/generate-html.js",
         "dev": "vite"
     },
     "devDependencies": {
